@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    
 
     border: 1px solid black;
 }
@@ -11,8 +11,72 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-size: 62.5%;
+
+    header {
+        padding: 10px 30px;
+        color: white;
+        background-image: url(./images/sand-and-stone.jpg);
+        background-position: center left;
+        background-repeat: no;
+        background-size: cover;
+        background-color: #002152;
+
+        h1 {
+            font-size: 4rem;;
+        }
+
+        h2 {
+            font-size: 2rem;;
+        }
+    }
+
+    main {
+        display: flex;
+        height: 100%;
+        font-size: 1rem;
+
+        nav {
+            list-style-type: none;
+            background: #016699;
+
+            ul {
+                a {color: white;}
+            }
+        }
+
+        section {
+            padding: 20px;
+
+            div {
+                display: flex;
+            }
+
+            h3 {
+                margin: 15px 0;
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                margin: 10px 10px 10px 0;
+            }
+
+            p {
+                margin: 10px 0;
+            }
+
+            li {
+                margin: 10px 10px 10px 30px;
+            }
+        }
+    }
 
     footer {
         margin-top: auto;
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;;
+        color: white;
+        background: #002152;
     }
 }
