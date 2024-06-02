@@ -3,4 +3,16 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    footer {
+        margin-top: auto;
+    }
 }
