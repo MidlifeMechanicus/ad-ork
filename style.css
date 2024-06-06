@@ -7,15 +7,17 @@
 
     /* border: 1px solid black; */
 }
+html {
+    font-size: 62.5%;
+}
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    font-size: 62.5%;
+    min-height: 100vh;
 
     header {
-        padding: 10px 30px;
+        padding: 20px 30px;
         color: white;
         background-image: url(./images/sand-and-stone.jpg);
         background-position: center left;
@@ -23,36 +25,38 @@ body {
         background-size: cover;
         background-color: #002152;
 
-        h1 {
-            font-size: 4rem;;
+        #banner {
+            font-size: 6rem;
         }
 
-        h2 {
-            font-size: 2rem;;
+        #logo {
+            display: block;
+            font-size: 4rem;
         }
     }
 
     main {
         display: flex;
-        height: 100%;
-        font-size: 1rem;
+        flex: auto;
+        font-size: 1.5rem;
 
         nav {
             padding: 10px 20px;
 
-            background: #016699;
+            background: #b8c9dc;
 
             ul {
                 display: flex;
                 flex-direction: column;                
-                width: 20vw;
+                width: 15vw;
+                margin-top: 20px;
                 list-style-type: none;
 
                 li{
                     margin:10px 0;
 
                     a {
-                        color: white;
+                        color: black;
                     }
                 }
                
@@ -60,23 +64,31 @@ body {
         }
 
         section {
+            height: 100%;
             padding: 20px 8vw;
 
             div {
                 display: flex;
             }
 
-            h3 {
+            h1 {
                 margin: 15px 0;
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
 
-            h4 {
+            h2 {
+                margin: 15px 0;
+                font-size: 2rem;
+            }
+
+            h3 {
                 margin: 10px 10px 10px 0;
+                font-size: 1.5rem;
             }
 
             p {
                 margin: 10px 0;
+                text-align: justify;
             }
 
             li {
@@ -87,10 +99,11 @@ body {
 
     footer {
         margin-top: auto;
-        padding: 5px;
+        padding: 10px;
         text-align: center;
-        font-size: 1rem;;
+        font-size: 1.5rem;
         color: white;
-        background: #002152;
+        background: #016699;
+        /* background: #002152; */
     }
 }
