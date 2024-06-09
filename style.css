@@ -56,7 +56,6 @@ body {
     main {
         display: flex;
         flex: auto;
-        font-size: 1.5rem;
 
         nav {
             /* Only the colors, texture and text of this element can be changed. */
@@ -72,15 +71,20 @@ body {
                 margin-top: 20px;
                 list-style-type: none;
                 background: white;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
 
                 li{
+                    display: flex;
+                    align-items: center;
                     margin: 2px 0;
-                    padding: 11px;
+                    padding: 0 11px;
+                    height: 54px;
                     background: #dce4ee;
 
                     a {
                         font-family: 'Times New Roman', Times, serif;
-                        font-size: 10px;
+                        font-size: 12px;
                         text-decoration: none;
                         color: black;
                     }
