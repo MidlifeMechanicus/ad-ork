@@ -2,22 +2,40 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     
 
     /* border: 1px solid black; */
 }
 html {
-    font-size: 62.5%;
+    font-size: 16px;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 966px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    .orkneyCommunities {
+        /* This element cannot be altered in any way */
+        height: 26px;
+        width: 100%;
+        padding: 4px 10px;
+        color: gold;
+        background-color: rgb(0,33,82);
+        font-weight: bold;
+    }
 
     header {
-        padding: 20px 30px;
+        /* Only the text and background image of this element can be changed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 220px;
+        padding: 0 50px;
         color: white;
         background-image: url(./images/sand-and-stone.jpg);
         background-position: center left;
@@ -26,12 +44,12 @@ body {
         background-color: #002152;
 
         #banner {
-            font-size: 6rem;
+            font-size: 60px;
         }
 
         #logo {
             display: block;
-            font-size: 4rem;
+            font-size: 40px;
         }
     }
 
@@ -41,22 +59,42 @@ body {
         font-size: 1.5rem;
 
         nav {
-            padding: 10px 20px;
+            /* Only the colors, texture and text of this element can be changed. */
+            width: 180px;
+            padding: 20px 0;
 
-            background: #b8c9dc;
+            background: #487daa;
 
             ul {
                 display: flex;
                 flex-direction: column;                
-                width: 15vw;
+                width: 100%;
                 margin-top: 20px;
                 list-style-type: none;
+                background: white;
 
                 li{
-                    margin:10px 0;
+                    margin: 2px 0;
+                    padding: 11px;
+                    background: #dce4ee;
 
                     a {
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 10px;
+                        text-decoration: none;
                         color: black;
+                    }
+
+                    a:hover, a.on {
+                        background: #b8c9dc;
+                        color: white;
+                    }
+                }
+
+                li:hover {
+                    background: #b8c9dc;
+                    a {
+                        color: white;
                     }
                 }
                
@@ -65,6 +103,7 @@ body {
 
         section {
             height: 100%;
+            width: 692px;
             padding: 20px 8vw;
 
             div {
@@ -74,11 +113,13 @@ body {
             h1 {
                 margin: 15px 0;
                 font-size: 2.5rem;
+                /* 24px */
             }
 
             h2 {
                 margin: 15px 0;
                 font-size: 2rem;
+                /* 20px */
             }
 
             h3 {
@@ -89,6 +130,7 @@ body {
             p {
                 margin: 10px 0;
                 text-align: justify;
+                /* 16px */
             }
 
             li {
@@ -98,12 +140,12 @@ body {
     }
 
     footer {
-        margin-top: auto;
-        padding: 10px;
-        text-align: center;
-        font-size: 1.5rem;
-        color: white;
-        background: #016699;
-        /* background: #002152; */
+        /* This element can only contain a background image and cannot otherwise be altered. */
+        height: 220px;
+        background-image: url(./images/legal-info.jpg);
+        background-position: center left;
+        background-repeat: no;
+        background-size: cover;
+        background-color: #002152;
     }
 }
