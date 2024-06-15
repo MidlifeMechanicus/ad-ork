@@ -1,6 +1,6 @@
 # Website refresh
 
-This was a surprisingly challenging project. Intended as a simple website refresh, it turned out that the host uses Spanglefish 2, and interface from 2012 that allows only limited access to raw html and css.
+This was a surprisingly challenging project. Intended as a simple website refresh, it turned out that the host uses Spanglefish 2, an interface from 2012 that allows only limited access to raw html and css.
 
 As such, I had to scrap my original flex-box design, and work first on creating a structure that duplicated the immutables of the Spanglefish 2 framework.
 
