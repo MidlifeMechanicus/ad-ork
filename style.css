@@ -116,25 +116,33 @@ body {
 
             h1 {
                 margin: 15px 0;
-                font-size: 2.5rem;
+                font-size: 24px;
                 /* 24px */
             }
 
             h2 {
                 margin: 15px 0;
-                font-size: 2rem;
+                font-size: 20px;
                 /* 20px */
             }
 
             h3 {
                 margin: 10px 10px 10px 0;
-                font-size: 1.5rem;
+                font-size: 15px;
             }
 
             p {
                 margin: 10px 0;
                 text-align: justify;
                 /* 16px */
+            }
+
+            .italics {
+                font-style: italic;
+            }
+
+            .textRight {
+                text-align: right;
             }
 
             li {
